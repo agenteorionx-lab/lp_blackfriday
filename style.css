@@ -4071,3 +4071,18 @@ body.version-c .hide-ver-c { display: none !important; }
         gap: 20px;
     }
 }
+
+
+/* Centralizar o último card caso fique sozinho na linha (Grid de 3) */
+@media (min-width: 993px) {
+    .products-static-grid .product-grid-item:last-child:nth-child(3n + 1) {
+        grid-column: 2;
+    }
+}
+
+/* Centralizar o último card caso fique sozinho na linha (Grid de 2 em tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .products-static-grid .product-grid-item:last-child:nth-child(2n + 1) {
+        grid-column: 1 / -1;
+    }
+}
