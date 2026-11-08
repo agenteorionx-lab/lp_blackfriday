@@ -1,11 +1,11 @@
-# Copy - Black Friday PPS e Holding
+﻿# Copy - Black Friday PPS e Holding
 
 ## 1. Promessa (topo)
 [Contador. Versão A: "Essa condição termina hoje, às 23h59". Versão B: "Os bônus terminam em 11/11, às 23h59". Versão C: sem contador.]
 [Foto dos três]
 [Logo Black Friday PPS e Holding]
-**Título:** Tenha acesso a todos os nossos cursos de planejamento patrimonial, sucessório e holdings em uma única oferta.
-**Subtítulo:** Mais a plataforma Infinity e encontros ao vivo, por 12 meses. Tudo de que você precisa para atender o seu cliente, sem comprar nenhum outro curso.
+**Título:** Tenha acesso a todos os nossos cursos e treinamentos em uma única oferta.
+**Subtítulo:** Junto com a plataforma Infinity e encontros ao vivo, por 12 meses. Tudo de que você precisa para atender o seu cliente, sem comprar nenhum outro curso.
 **Botão:** Adquirir acesso
 
 ---
