@@ -12,7 +12,7 @@
 
 ## 2. Tudo o que você vai receber
 **Título:** Isso é tudo que você vai receber
-**Subtítulo:** Tudo o que ensinamos em PPS, holdings, ITCMD e governança. Em um só lugar, por 12 meses.
+**Subtítulo:** Tudo o que ensinamos em PPS, holdings, ITCMD e governança. Em um só lugar.
 
 **Botão:** Adquirir acesso
 

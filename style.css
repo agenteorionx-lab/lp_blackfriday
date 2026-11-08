@@ -4016,3 +4016,58 @@ body.version-c .hide-ver-c { display: none !important; }
     box-shadow: 0 8px 36px rgba(37, 211, 102, 0.75), 0 0 25px rgba(37, 211, 102, 0.45) !important;
     color: #FFFFFF !important;
 }
+
+
+/* ====================================================
+   GRID ESTÁTICO DE PRODUTOS (3 EM 3 DESCENDO)
+   ==================================================== */
+.products-static-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 28px;
+    max-width: 1240px;
+    margin: 48px auto 0 auto;
+}
+
+.product-grid-item {
+    display: flex;
+    justify-content: center;
+}
+
+.product-grid-item .product-card {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #111116;
+    border: 1px solid rgba(223, 160, 98, 0.35);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: var(--transition-smooth);
+}
+
+.product-grid-item .product-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(223, 160, 98, 0.8);
+    box-shadow: 0 16px 40px rgba(223, 160, 98, 0.3);
+}
+
+.product-grid-item .product-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .products-static-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-static-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
