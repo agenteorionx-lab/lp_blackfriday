@@ -4086,3 +4086,87 @@ body.version-c .hide-ver-c { display: none !important; }
         grid-column: 1 / -1;
     }
 }
+
+
+/* ====================================================
+   REDESIGN PREMIUM DOS CARDS DE ENCONTROS AO VIVO
+   Design Integrado Black & Gold: Profissional, Moderno e Legível
+   ==================================================== */
+.live-updates-section {
+    background: radial-gradient(circle at 50% 15%, rgba(223, 160, 98, 0.12) 0%, rgba(10, 10, 14, 1) 85%) !important;
+}
+
+.live-card {
+    background: linear-gradient(180deg, #181820 0%, #101015 100%) !important;
+    border: 1.5px solid rgba(223, 160, 98, 0.4) !important;
+    border-radius: 20px !important;
+    padding: 32px 28px !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(223, 160, 98, 0.08) !important;
+    transition: var(--transition-smooth) !important;
+}
+
+.live-card::before {
+    background: linear-gradient(180deg, #EFC79B 0%, #DFA062 100%) !important;
+    width: 4px !important;
+}
+
+.live-card:hover {
+    background: linear-gradient(180deg, #1f1f2a 0%, #14141b 100%) !important;
+    border-color: #DFA062 !important;
+    transform: translateY(-6px) !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(223, 160, 98, 0.3) !important;
+}
+
+/* Selos Elegantes com Alto Contraste */
+.live-card-badge {
+    background: linear-gradient(135deg, #e63946 0%, #d62828 100%) !important;
+    color: #FFFFFF !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.78rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.06em !important;
+    padding: 6px 14px !important;
+    border-radius: 999px !important;
+    box-shadow: 0 3px 12px rgba(230, 57, 70, 0.45) !important;
+}
+
+.live-card-badge.badge-vip {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    box-shadow: 0 3px 12px rgba(37, 211, 102, 0.45) !important;
+}
+
+/* Ícones Dourados Sofisticados */
+.live-icon-pill {
+    background: rgba(223, 160, 98, 0.12) !important;
+    border: 1px solid rgba(223, 160, 98, 0.35) !important;
+    color: #EFC79B !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 12px !important;
+    font-size: 1.45rem !important;
+}
+
+.live-icon-pill.pill-whatsapp {
+    background: rgba(37, 211, 102, 0.12) !important;
+    border-color: rgba(37, 211, 102, 0.35) !important;
+    color: #25D366 !important;
+}
+
+/* Tipografia 100% Legível com 'Inter' no Título */
+.live-card-title {
+    font-family: var(--font-body) !important; /* Inter: limpa, moderna e super legível */
+    font-size: 1.22rem !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    line-height: 1.4 !important;
+    letter-spacing: -0.01em !important;
+    margin-top: 14px !important;
+    margin-bottom: 10px !important;
+}
+
+.live-card-desc {
+    font-family: var(--font-body) !important;
+    font-size: 0.95rem !important;
+    color: #A6A6B8 !important; /* Grafite suave com excelente leitura */
+    line-height: 1.55 !important;
+}
