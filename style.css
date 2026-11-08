@@ -4584,3 +4584,66 @@ body.version-c .hide-ver-c { display: none !important; }
 .live-card-badge i {
     font-size: 0.95rem !important;
 }
+
+
+/* ====================================================
+   REMOÇÃO DE TODOS OS EFEITOS DOS CARDS DE PRODUTOS
+   Nitidez 100% natural, sem blur, sem zoom, sem sombras artificiais
+   ==================================================== */
+.product-grid-item .product-card {
+    display: flex !important;
+    flex-direction: column !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+}
+
+.product-img-wrap {
+    width: 100% !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+}
+
+.product-grid-item:hover .product-img-wrap,
+.product-grid-item:hover .product-card {
+    transform: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.product-img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    filter: none !important;
+    transform: none !important;
+    border-radius: 0 !important;
+}
+
+.product-card-body {
+    padding: 14px 4px 0 4px !important;
+    text-align: center !important;
+}
+
+.product-card-desc {
+    font-family: var(--font-body) !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    color: #FFFFFF !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+    letter-spacing: normal !important;
+}
