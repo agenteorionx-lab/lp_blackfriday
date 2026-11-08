@@ -4465,3 +4465,55 @@ body.version-c .hide-ver-c { display: none !important; }
 .anchor-minimal-board .strike-price-tag.struck .price-val {
     color: #9292a0 !important;
 }
+
+
+/* ====================================================
+   ESTILOS DOS TEXTINHOS DESCRITIVOS DOS CARDS DE PRODUTOS
+   Visual limpo, elegante e centralizado (sem vitalício e sem ementa)
+   ==================================================== */
+.product-grid-item .product-card {
+    display: flex !important;
+    flex-direction: column !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+}
+
+.product-img-wrap {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(223, 160, 98, 0.35);
+    background: #0d0d12;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+    transition: var(--transition-smooth);
+}
+
+.product-grid-item:hover .product-img-wrap {
+    transform: translateY(-6px);
+    border-color: rgba(223, 160, 98, 0.85);
+    box-shadow: 0 16px 36px rgba(223, 160, 98, 0.25);
+}
+
+.product-card-body {
+    padding: 16px 8px 6px 8px;
+    text-align: center;
+}
+
+.product-card-desc {
+    font-family: var(--font-body);
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #E2E2EC;
+    line-height: 1.45;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+@media (max-width: 768px) {
+    .product-card-desc {
+        font-size: 0.9rem;
+    }
+}
