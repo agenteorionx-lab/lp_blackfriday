@@ -4317,3 +4317,105 @@ body.version-c .hide-ver-c { display: none !important; }
     flex-shrink: 0 !important;
     filter: drop-shadow(0 0 5px rgba(37, 211, 102, 0.4)) !important;
 }
+
+
+/* ====================================================
+   PADRONIZAÇÃO TIPOGRÁFICA DOS PREÇOS (INTER MODERNA & SÓLIDA)
+   Elimina a serifa estilizada ilegível nos números e cifras
+   ==================================================== */
+
+/* 1. Valor Riscado da Ancoragem (Total Somado) */
+.anchor-price-box {
+    display: inline-flex !important;
+    align-items: baseline !important;
+    justify-content: center !important;
+    position: relative !important;
+    font-family: var(--font-body) !important; /* Inter */
+}
+
+.anchor-currency {
+    font-family: var(--font-body) !important;
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    color: #b5b5c2 !important;
+    margin-right: 8px !important;
+    letter-spacing: -0.02em !important;
+}
+
+.anchor-number {
+    font-family: var(--font-body) !important; /* Inter limpa e legível */
+    font-size: 4.2rem !important;
+    font-weight: 900 !important;
+    color: #FFFFFF !important;
+    letter-spacing: -0.03em !important;
+    line-height: 1 !important;
+}
+
+.anchor-strikethrough {
+    height: 4px !important;
+    background: #e63946 !important;
+    box-shadow: 0 0 12px rgba(230, 57, 70, 0.85) !important;
+    transform: rotate(-2.5deg) !important;
+}
+
+/* 2. Preço Principal da Oferta (Parcelamento) */
+.offer-installments-num {
+    font-family: var(--font-body) !important; /* Inter */
+    font-size: 3.8rem !important;
+    font-weight: 900 !important;
+    color: #FFFFFF !important;
+    letter-spacing: -0.03em !important;
+    line-height: 1.1 !important;
+    display: flex !important;
+    align-items: baseline !important;
+    justify-content: center !important;
+    gap: 8px !important;
+}
+
+.offer-installments-num span {
+    font-family: var(--font-body) !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    color: var(--color-gold) !important;
+    letter-spacing: -0.02em !important;
+}
+
+/* Textos de Apoio da Oferta */
+.offer-old-price {
+    font-family: var(--font-body) !important;
+    font-size: 1.15rem !important;
+    font-weight: 500 !important;
+    color: #8c8c99 !important;
+    letter-spacing: 0.01em !important;
+}
+
+.offer-cash-price {
+    font-family: var(--font-body) !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: var(--color-gold-light) !important;
+    letter-spacing: -0.01em !important;
+}
+
+/* Título de transição da Black Friday */
+.anchor-section h3 {
+    font-family: var(--font-body) !important;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+}
+
+@media (max-width: 768px) {
+    .anchor-number {
+        font-size: 3rem !important;
+    }
+    .anchor-currency {
+        font-size: 1.6rem !important;
+    }
+    .offer-installments-num {
+        font-size: 2.9rem !important;
+    }
+    .offer-installments-num span {
+        font-size: 1.7rem !important;
+    }
+}
