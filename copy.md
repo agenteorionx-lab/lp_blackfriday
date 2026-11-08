@@ -31,13 +31,13 @@
 ## 4. Atualizações
 **Título:** Encontros ao vivo durante 12 meses e comunidade exclusiva. 
 
-- Curso ao vivo Acordo de Sócios & Protocolo Familiar
+- Curso Acordo de Sócios & Protocolo Familiar
 - Tributação na Alienação de Imóveis · Jonatas Albino: ao vivo em 30/11 e 01/12.
 - Como diagnosticar a família antes do PPS
 - Do Caos à Governança: aula ao vivo
 
 - Atualização mensal ao vivo: um encontro por mês com os mentores, durante 12 meses.
-- Comunidade exclusiva no WhatsApp: networking com profissionais que atuam com PPS.
+- Comunidade exclusiva no WhatsApp: Com os mentores e com profissionais que atuam com PPS e holdings em todo o Brasil.
 
 **Botão:** Adquirir acesso
 
@@ -76,7 +76,7 @@
 - Legislação de ITCMD de Minas Gerais: R$ 247
 - Sistemas do ITCMD em São Paulo: R$ 247
 - Calculadora ITCD (3 meses): R$ 300
-- Curso ao vivo Acordo de Sócios & Protocolo Familiar: R$ 397
+- Curso Acordo de Sócios & Protocolo Familiar: R$ 397
 - Acervo de Minutas (4 minutas): R$ 100
 - Tributação na Alienação de Imóveis (ao vivo): R$ 247
 - Como diagnosticar a família antes do PPS (ao vivo): R$ 267
