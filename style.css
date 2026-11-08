@@ -4419,3 +4419,49 @@ body.version-c .hide-ver-c { display: none !important; }
         font-size: 1.7rem !important;
     }
 }
+
+
+/* ====================================================
+   LINHAS VERMELHAS NOS PREÇOS DA TABELA DE ANCORAGEM
+   Efeito cascata suave e alinhamento milimétrico
+   ==================================================== */
+.anchor-minimal-board .strike-price-tag {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.anchor-minimal-board .strike-price-tag .price-val {
+    font-family: var(--font-body) !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    color: var(--color-gold) !important;
+    white-space: nowrap;
+    transition: color 0.35s ease;
+}
+
+.anchor-minimal-board .strike-price-tag .red-line {
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    width: 0 !important;
+    height: 2.5px;
+    background: #e63946;
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.85);
+    border-radius: 2px;
+    transform: rotate(-3deg);
+    opacity: 0;
+    pointer-events: none;
+    transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s ease;
+}
+
+/* Estado Ativado: Linha risca o valor e o preço atenua suavemente */
+.anchor-minimal-board .strike-price-tag.struck .red-line {
+    width: calc(100% + 8px) !important;
+    opacity: 1;
+}
+
+.anchor-minimal-board .strike-price-tag.struck .price-val {
+    color: #9292a0 !important;
+}

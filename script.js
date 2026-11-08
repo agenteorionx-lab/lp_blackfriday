@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
        ANIMAÇÃO EM CASCATA DOS PREÇOS RISCADOS AO ROLAR A TELA
        Conforme o usuário chega perto, os riscos cortam de cima para baixo
        ==================================================== */
-    const masterCard = document.querySelector('.master-offer-card');
+    const masterCard = document.querySelector('.anchor-minimal-board') || document.querySelector('.anchor-section');
     const strikeTags = document.querySelectorAll('.strike-price-tag');
     let hasTriggeredStrikes = false;
 
