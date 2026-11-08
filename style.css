@@ -4170,3 +4170,150 @@ body.version-c .hide-ver-c { display: none !important; }
     color: #A6A6B8 !important; /* Grafite suave com excelente leitura */
     line-height: 1.55 !important;
 }
+
+
+/* ====================================================
+   REDESIGN TOTAL DO BLOCO DE BÔNUS POR PERÍODO
+   Design Escuro Luxuoso Integrado com Tipografia Inter & Checks Verdes
+   ==================================================== */
+.period-bonus-section {
+    position: relative;
+    padding: 85px 0;
+    background: radial-gradient(circle at 50% 25%, rgba(223, 160, 98, 0.1) 0%, rgba(8, 8, 10, 1) 85%) !important;
+    border-bottom: 1px solid rgba(223, 160, 98, 0.25) !important;
+}
+
+/* Container Maior com Fundo Escuro Profundo e Borda Dourada Nobre */
+.period-bonus-card {
+    background: linear-gradient(180deg, rgba(22, 22, 28, 0.95) 0%, rgba(12, 12, 16, 0.98) 100%) !important;
+    border: 1.5px solid rgba(223, 160, 98, 0.45) !important;
+    border-radius: 28px !important;
+    padding: 50px 42px !important;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.8), 0 0 35px rgba(223, 160, 98, 0.15) !important;
+    text-align: center !important;
+}
+
+/* Título em Tipografia Inter Moderna e Branca */
+.period-bonus-card .section-title {
+    font-family: var(--font-body) !important;
+    color: #FFFFFF !important;
+    font-size: 2.1rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 12px !important;
+}
+
+/* Faixa de Urgência em Vermelho Suave com Alto Contraste */
+.bonus-warning-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 8px 22px !important;
+    background: rgba(230, 57, 70, 0.16) !important;
+    border: 1px solid rgba(230, 57, 70, 0.45) !important;
+    border-radius: 999px !important;
+    color: #ff6b6b !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.88rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+    margin-bottom: 22px !important;
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.2) !important;
+}
+
+/* Grid com 3 Cards Internos */
+.bonus-items-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+    margin: 36px 0 !important;
+    text-align: left !important;
+}
+
+/* Card Interno Individual */
+.period-bonus-card .bonus-item-card {
+    background: rgba(14, 14, 18, 0.85) !important;
+    border: 1px solid rgba(223, 160, 98, 0.28) !important;
+    border-radius: 20px !important;
+    padding: 32px 26px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+    transition: var(--transition-smooth) !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.period-bonus-card .bonus-item-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(223, 160, 98, 0.7) !important;
+    box-shadow: 0 15px 35px rgba(223, 160, 98, 0.2) !important;
+}
+
+/* Card 1: Destaque de R$ 500 de Desconto */
+.period-bonus-card .bonus-card-discount {
+    background: radial-gradient(ellipse at 50% 0%, rgba(223, 160, 98, 0.14) 0%, rgba(14, 14, 18, 0.95) 85%) !important;
+    border: 1.5px solid rgba(223, 160, 98, 0.65) !important;
+}
+
+/* Ícones Dourados Sofisticados no Topo */
+.period-bonus-card .bonus-card-icon-wrap {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 12px !important;
+    background: rgba(223, 160, 98, 0.15) !important;
+    border: 1px solid rgba(223, 160, 98, 0.35) !important;
+    color: var(--color-gold-light) !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 18px !important;
+}
+
+/* Títulos dos Cards em Inter Branca 100% Legível */
+.period-bonus-card .bonus-card-title {
+    font-family: var(--font-body) !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    line-height: 1.35 !important;
+    letter-spacing: -0.01em !important;
+    margin-bottom: 14px !important;
+}
+
+.period-bonus-card .bonus-card-subtitle {
+    font-family: var(--font-body) !important;
+    font-size: 0.94rem !important;
+    color: #A6A6B8 !important;
+    line-height: 1.55 !important;
+}
+
+/* Lista de Itens com Checks Verdes Brilhantes */
+.period-bonus-card .bonus-card-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.period-bonus-card .bonus-card-list li {
+    font-family: var(--font-body) !important;
+    font-size: 0.93rem !important;
+    color: #D6D6E2 !important;
+    line-height: 1.45 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 11px !important;
+}
+
+.period-bonus-card .bonus-card-list li strong {
+    color: var(--color-gold-light) !important;
+    font-weight: 700 !important;
+}
+
+/* Ícone de Check Verde de Alta Conversão */
+.period-bonus-card .bonus-card-list li i {
+    color: #25D366 !important; /* Verde neon oficial */
+    font-size: 1.25rem !important;
+    margin-top: 2px !important;
+    flex-shrink: 0 !important;
+    filter: drop-shadow(0 0 5px rgba(37, 211, 102, 0.4)) !important;
+}
