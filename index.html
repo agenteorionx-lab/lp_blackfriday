@@ -1,0 +1,982 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Desativar Cache Total no Navegador -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Black Friday PPS e Holding | Dra. Mariana Arteiro, Jonatas Albino e João Teixeira</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Tenha acesso a todos os nossos cursos de planejamento patrimonial, sucessório e holdings em uma única oferta. Mais a plataforma Infinity e encontros ao vivo, por 12 meses.">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Black Friday PPS e Holding | Dra. Mariana Arteiro">
+    <meta property="og:description"
+        content="Tenha acesso a todos os nossos cursos de planejamento patrimonial, sucessório e holdings em uma única oferta.">
+    <meta property="og:image" content="Experts/Todos.webp">
+
+    <!-- Fonts: Playfair Display (Heading) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+    <!-- Swiper CSS (para o carrossel dos 12 cursos/produtos) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css?t=1794098702">
+
+    <!-- Preload LCP Images -->
+    <link rel="preload" href="Experts/Todos.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="logos/Logo-Sem Fundo.webp" as="image" type="image/webp">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '985331813493541');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3212080605847168&ev=PageView&noscript=1"
+    /><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=985331813493541&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body class="version-a">
+
+    <!-- ==========================================
+         (TOPO FIXO) - Cronômetro de Contagem Regressiva
+         Versão A: "Essa condição termina hoje, às 23h59"
+         Versão B: "Os bônus terminam em 11/11, às 23h59"
+         Versão C: Oculto
+         ========================================== -->
+    <header class="top-fixed-bar hide-ver-c" id="topBar">
+        <div class="container top-bar-content">
+            <div class="top-bar-label">
+                <i class="ph-bold ph-alarm"></i>
+                <span class="show-ver-a">Essa condição termina hoje, às 23h59</span>
+                <span class="show-ver-b">Os bônus terminam em 11/11, às 23h59</span>
+            </div>
+            <div class="countdown-timer" id="countdownTimer">
+                <div class="time-box">
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-unit">DIAS</span>
+                </div>
+                <span class="time-sep">:</span>
+                <div class="time-box">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-unit">HORAS</span>
+                </div>
+                <span class="time-sep">:</span>
+                <div class="time-box">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-unit">MIN</span>
+                </div>
+                <span class="time-sep">:</span>
+                <div class="time-box">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-unit">SEG</span>
+                </div>
+            </div>
+            <a href="#oferta" class="btn-top-cta" aria-label="Adquirir acesso">
+                <span>Adquirir acesso</span>
+                <i class="ph-bold ph-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             1. Promessa (topo) / Hero Principal
+             ========================================== -->
+        <section class="hero-section" id="hero">
+            <div class="hero-ambient-glow"></div>
+            <div class="container hero-container">
+                <!-- Logotipo da Black Friday PPS e Holding -->
+                <div class="hero-logo-wrapper">
+                    <img src="logos/Logo-Sem Fundo.webp" alt="Black Friday PPS e Holding" class="hero-logo" width="1080" height="464" fetchpriority="high">
+                </div>
+
+                <div class="hero-grid">
+                    <!-- Coluna de Texto e CTA -->
+                    <div class="hero-text-col">
+                        <h1 class="hero-title">
+                            Tenha acesso a todos os nossos cursos de planejamento patrimonial, sucessório e holdings em uma única oferta.
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Mais a plataforma Infinity e encontros ao vivo, por 12 meses. Tudo de que você precisa para atender o seu cliente, sem comprar nenhum outro curso.
+                        </p>
+
+                        <div class="hero-cta-wrapper">
+                            <a href="#oferta" class="btn btn-gold btn-large" aria-label="Adquirir acesso">
+                                <span>Adquirir acesso</span>
+                                <i class="ph-bold ph-caret-right"></i>
+                            </a>
+                            <p class="cta-microcopy">
+                                <i class="ph-bold ph-shield-check"></i>
+                                <span>Acesso imediato • 100% seguro • Garantia de 7 dias</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Coluna da Imagem dos 3 Especialistas -->
+                    <div class="hero-image-col">
+                        <div class="experts-photo-frame">
+                            <img src="Experts/Todos.webp" alt="Dra. Mariana Arteiro, Jonatas Albino e João Teixeira" class="img-experts-all" width="1080" height="859" loading="eager" fetchpriority="high" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             Trilha de Pilares da Captura Mantida (Conceito Original Preservado)
+             ========================================== -->
+        <section class="pillars-section" id="pilares">
+            <div class="pillars-ambient-glow"></div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title pillars-title-main">
+                        Da entrevista com o cliente à governança da holding: tudo em uma única oferta
+                    </h2>
+                </div>
+
+                <!-- Trilha Interativa dos Pilares -->
+                <div class="anchor-trail pillars-trail" id="pillarsTrail">
+                    <div class="trail-line-bg"></div>
+                    <div class="trail-line-progress" id="pillarsLineProgress"></div>
+
+                    <!-- Pilar 1: Planejamento Patrimonial e Sucessório -->
+                    <div class="trail-step step-left pillar-trail-step" data-step="1">
+                        <div class="trail-content pillar-trail-content">
+                            <div class="pillar-card-box">
+                                <span class="pillar-instructor-tag">
+                                    <i class="ph-bold ph-user-circle"></i> com Dra. Mariana Arteiro
+                                </span>
+                                <h3 class="pillar-title-trail">Planejamento Patrimonial e Sucessório</h3>
+                                <p class="pillar-desc-trail">
+                                    Da entrevista com o cliente à escolha das ferramentas certas, incluindo a holding.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="trail-node-wrap">
+                            <div class="trail-node-glow"></div>
+                            <div class="trail-node-ring">
+                                <i class="ph-duotone ph-tree-structure pillar-node-icon"></i>
+                            </div>
+                        </div>
+                        <div class="trail-spacer"></div>
+                    </div>
+
+                    <!-- Pilar 2: Tributação -->
+                    <div class="trail-step step-right pillar-trail-step" data-step="2">
+                        <div class="trail-spacer"></div>
+                        <div class="trail-node-wrap">
+                            <div class="trail-node-glow"></div>
+                            <div class="trail-node-ring">
+                                <i class="ph-duotone ph-receipt pillar-node-icon"></i>
+                            </div>
+                        </div>
+                        <div class="trail-content pillar-trail-content">
+                            <div class="pillar-card-box">
+                                <span class="pillar-instructor-tag">
+                                    <i class="ph-bold ph-user-circle"></i> com Jonatas Albino
+                                </span>
+                                <h3 class="pillar-title-trail">Tributação</h3>
+                                <p class="pillar-desc-trail">
+                                    Total controle sobre as consequências tributárias da operação na pessoa física ou jurídica
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pilar 3: Governança -->
+                    <div class="trail-step step-left pillar-trail-step" data-step="3">
+                        <div class="trail-content pillar-trail-content">
+                            <div class="pillar-card-box">
+                                <span class="pillar-instructor-tag">
+                                    <i class="ph-bold ph-user-circle"></i> com João Teixeira
+                                </span>
+                                <h3 class="pillar-title-trail">Governança</h3>
+                                <p class="pillar-desc-trail">
+                                    Governança estruturante durante a sucessão e construtivista depois, com os conselhos mantendo a holding funcionando.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="trail-node-wrap">
+                            <div class="trail-node-glow"></div>
+                            <div class="trail-node-ring">
+                                <i class="ph-duotone ph-scales pillar-node-icon"></i>
+                            </div>
+                        </div>
+                        <div class="trail-spacer"></div>
+                    </div>
+
+                    <!-- Pilar 4: Tecnologia -->
+                    <div class="trail-step step-right pillar-trail-step" data-step="4">
+                        <div class="trail-spacer"></div>
+                        <div class="trail-node-wrap">
+                            <div class="trail-node-glow"></div>
+                            <div class="trail-node-ring highlight-main">
+                                <i class="ph-duotone ph-cpu pillar-node-icon"></i>
+                            </div>
+                        </div>
+                        <div class="trail-content pillar-trail-content">
+                            <div class="pillar-card-box highlight-tech">
+                                <span class="pillar-instructor-tag highlight-infinity">
+                                    <i class="ph-bold ph-lightning"></i> Infinity Tributos
+                                </span>
+                                <h3 class="pillar-title-trail">Tecnologia</h3>
+                                <p class="pillar-desc-trail">
+                                    Calcule os custos totais em inventários, constituição de holding, tributação de aluguéis, doação e alienação de imóveis por meio de relatórios conclusivos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ponto Final -->
+                    <div class="trail-step step-center pillar-trail-step pillar-end-step" data-step="5">
+                        <div class="trail-spacer"></div>
+                        <div class="trail-node-wrap">
+                            <div class="trail-node-glow"></div>
+                            <div class="trail-node-ring highlight-main">
+                                <div class="trail-node-dot"></div>
+                            </div>
+                        </div>
+                        <div class="trail-spacer"></div>
+                    </div>
+                </div>
+
+                <!-- Bloco de Conclusão -->
+                <div class="pillar-conclusion-wrapper text-center">
+                    <div class="pillar-conclusion-box text-center">
+                        <p class="conclusion-highlight">
+                            Tudo em um só lugar. Você não vai precisar comprar nenhum outro curso.
+                        </p>
+                        <p class="conclusion-sub">
+                            E ainda vai aprender a vender e precificar cada etapa para o seu cliente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pillars-call-to-action text-center">
+                    <a href="#oferta" class="btn btn-gold btn-large" aria-label="Adquirir acesso">
+                        <span>Adquirir acesso</span>
+                        <i class="ph-bold ph-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             2. Tudo o que você vai receber (Vitrine de Cursos)
+             ========================================== -->
+        <section class="products-section" id="produtos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">
+                        Isso é tudo que você vai receber
+                    </h2>
+                    <p class="section-subtitle" style="color: var(--color-gold-light); font-size: 1.15rem; margin-top: 10px;">
+                        Tudo o que ensinamos em PPS, holdings, ITCMD e governança. Em um só lugar, por 12 meses.
+                    </p>
+                </div>
+
+                <!-- Carrossel Swiper com os 12 Cards -->
+                <div class="swiper products-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Card 01: PPS Business 10 -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-01.webp" alt="PPS Business 10 - Dra. Mariana Arteiro" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 02: Aulão ITBI Pós Reforma -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-02.webp" alt="Aulão ITBI Pós Reforma" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 03: Agentes de Governança na Prática -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-03.webp" alt="Agentes de Governança na Prática" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 04: Acordo de Sócios & Protocolo Familiar -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-04.webp" alt="Acordo de Sócios & Protocolo Familiar" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 05: Acervo de Minutas Práticas -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-05.webp" alt="Acervo de Minutas Práticas" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 06: Bônus Exclusivo E-book -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-06.webp" alt="Bônus Exclusivo E-book: O Futuro da Sua Empresa Familiar" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 07: Curso Completo de ITCD -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-07.webp" alt="Curso Completo de ITCD" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 08: Legislação de ITCMD de São Paulo -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-08.webp" alt="Legislação de ITCMD de São Paulo" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 09: Legislação de ITD do Rio de Janeiro -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-09.webp" alt="Legislação de ITD do Rio de Janeiro" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 10: Legislação de ITCMD de Minas Gerais -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-10.webp" alt="Legislação de ITCMD de Minas Gerais" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 11: Sistemas do ITCMD em São Paulo -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-11.webp" alt="Sistemas do ITCMD em São Paulo" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 12: Tributação da Alienação de Imóveis -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-12.webp" alt="Tributação da Alienação de Imóveis" class="product-img" width="729" height="1125" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <!-- Card 14: Plataforma Infinity -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <img src="produtos/CARD-14.webp" alt="Plataforma Infinity - Engenharia Econômica Patrimonial" class="product-img" width="729" height="1090" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles do Swiper -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="section-cta text-center mt-5">
+                    <a href="#oferta" class="btn btn-gold btn-large" aria-label="Adquirir acesso">
+                        <span>Adquirir acesso</span>
+                        <i class="ph-bold ph-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             3. Infinity Tributos (Mockup + Logo Dourado)
+             ========================================== -->
+        <section class="platform-section" id="plataforma">
+            <div class="container">
+                <div class="platform-card">
+                    <div class="platform-header text-center">
+                        <span class="platform-badge">Receba também</span>
+                        <h2 class="platform-title">
+                            12 meses de acesso à nossa plataforma de cálculo tributário
+                        </h2>
+                        <div class="platform-brand-wrapper">
+                            <img src="logos/infinity-logo-dourado.webp" alt="Infinity - Engenharia Econômica Patrimonial" class="platform-brand-logo" width="1622" height="346" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+
+                    <!-- Mockup da plataforma -->
+                    <div class="software-mockup-wrapper">
+                        <div class="laptop-shell">
+                            <div class="laptop-camera"></div>
+                            <div class="platform-screen-wrap">
+                                <img src="logos/mockup-itcmd.webp" alt="Plataforma de Cálculo Tributário - Infinity Soluções Tributárias" class="platform-screen-img" width="1352" height="680" loading="lazy" decoding="async">
+                            </div>
+                            <div class="laptop-base"></div>
+                        </div>
+                    </div>
+
+                    <p class="platform-description text-center">
+                        Simule, compare e mostre ao seu cliente o impacto financeiro da organização patrimonial em minutos.
+                    </p>
+
+                    <div class="section-cta text-center">
+                        <a href="#oferta" class="btn btn-gold btn-large" aria-label="Adquirir acesso">
+                            <span>Adquirir acesso</span>
+                            <i class="ph-bold ph-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. Atualizações & Encontros ao Vivo
+             ========================================== -->
+        <section class="live-updates-section" id="atualizacoes">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">
+                        Encontros ao vivo durante 12 meses e comunidade exclusiva
+                    </h2>
+                </div>
+
+                <div class="live-updates-grid">
+                    <!-- Item 1: Acordo de Sócios -->
+                    <div class="live-card">
+                        <div class="live-card-top">
+                            <span class="live-card-badge"><i class="ph-bold ph-broadcast"></i> Ao Vivo</span>
+                            <div class="live-icon-pill" title="Acordo de Sócios">
+                                <i class="ph-duotone ph-handshake"></i>
+                            </div>
+                        </div>
+                        <h3 class="live-card-title">Curso ao vivo Acordo de Sócios & Protocolo Familiar</h3>
+                        <p class="live-card-desc">Implementação estratégica e prática das regras societárias e de convivência nas empresas familiares.</p>
+                    </div>
+
+                    <!-- Item 2: Alienação de Imóveis -->
+                    <div class="live-card">
+                        <div class="live-card-top">
+                            <span class="live-card-badge"><i class="ph-bold ph-calendar"></i> 30/11 e 01/12</span>
+                            <div class="live-icon-pill" title="Tributação de Imóveis">
+                                <i class="ph-duotone ph-buildings"></i>
+                            </div>
+                        </div>
+                        <h3 class="live-card-title">Tributação na Alienação de Imóveis</h3>
+                        <p class="live-card-desc">Com Jonatas Albino: imersão prática para dominar a apuração e redução de impactos fiscais na venda de imóveis.</p>
+                    </div>
+
+                    <!-- Item 3: Diagnosticar a Família -->
+                    <div class="live-card">
+                        <div class="live-card-top">
+                            <span class="live-card-badge"><i class="ph-bold ph-broadcast"></i> Aula Ao Vivo</span>
+                            <div class="live-icon-pill" title="Família & Sucessão">
+                                <i class="ph-duotone ph-users-three"></i>
+                            </div>
+                        </div>
+                        <h3 class="live-card-title">Como diagnosticar a família antes do PPS</h3>
+                        <p class="live-card-desc">Método completo para mapear conflitos, necessidades patrimoniais e preparar o terreno da sucessão.</p>
+                    </div>
+
+                    <!-- Item 4: Do Caos à Governança -->
+                    <div class="live-card">
+                        <div class="live-card-top">
+                            <span class="live-card-badge"><i class="ph-bold ph-broadcast"></i> Aula Ao Vivo</span>
+                            <div class="live-icon-pill" title="Governança Estruturante">
+                                <i class="ph-duotone ph-scales"></i>
+                            </div>
+                        </div>
+                        <h3 class="live-card-title">Do Caos à Governança</h3>
+                        <p class="live-card-desc">Passo a passo definitivo para organizar estruturas societárias e garantir perpetuidade de negócios.</p>
+                    </div>
+
+                    <!-- Item 5: Atualização Mensal -->
+                    <div class="live-card">
+                        <div class="live-card-top">
+                            <span class="live-card-badge"><i class="ph-bold ph-clock-counter-clockwise"></i> Mensal (12 Meses)</span>
+                            <div class="live-icon-pill" title="Encontros Mensais">
+                                <i class="ph-duotone ph-chalkboard-teacher"></i>
+                            </div>
+                        </div>
+                        <h3 class="live-card-title">Atualização mensal ao vivo</h3>
+                        <p class="live-card-desc">Um encontro por mês com os mentores, durante 12 meses, para debater casos, novas jurisprudências e reformas.</p>
+                    </div>
+
+                    <!-- Item 6: Comunidade WhatsApp -->
+                    <div class="live-card">
+                        <div class="live-card-top">
+                            <span class="live-card-badge badge-vip"><i class="ph-fill ph-whatsapp-logo"></i> Grupo VIP</span>
+                            <div class="live-icon-pill pill-whatsapp" title="Networking Exclusivo">
+                                <i class="ph-duotone ph-chats-circle"></i>
+                            </div>
+                        </div>
+                        <h3 class="live-card-title">Comunidade exclusiva no WhatsApp</h3>
+                        <p class="live-card-desc">Networking qualificado e troca de experiências diárias com profissionais que atuam ativamente com PPS em todo o Brasil.</p>
+                    </div>
+                </div>
+
+                <div class="section-cta text-center mt-5">
+                    <a href="#oferta" class="btn btn-gold btn-large" aria-label="Adquirir acesso">
+                        <span>Adquirir acesso</span>
+                        <i class="ph-bold ph-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             5. O que você recebe comprando hoje (Bônus Temporários)
+             Versão A: 09/11 até 23h59 (R$ 500 desconto + 3 e-books + 3 aulas)
+             Versão B: 10/11 e 11/11 até 23h59 (3 aulas gravadas)
+             Versão C: Oculto
+             ========================================== -->
+        <section class="period-bonus-section hide-ver-c" id="bonus-temporarios">
+            <div class="container">
+                <div class="period-bonus-card text-center">
+                    <!-- Versão A -->
+                    <div class="show-ver-a">
+                        <div class="bonus-warning-pill">
+                            <i class="ph-bold ph-warning-circle"></i>
+                            <span>À meia-noite, o desconto e os e-books saem do ar</span>
+                        </div>
+                        <h2 class="section-title">
+                            Fechando hoje, até 23h59, você ainda leva:
+                        </h2>
+
+                        <div class="bonus-items-grid">
+                            <!-- Card 1: Desconto -->
+                            <div class="bonus-item-card bonus-card-discount">
+                                <div class="bonus-card-icon-wrap">
+                                    <i class="ph-fill ph-tag"></i>
+                                </div>
+                                <h3 class="bonus-card-title">R$ 500 de Desconto</h3>
+                                <p class="bonus-card-subtitle">Condição máxima e exclusiva aplicada diretamente na sua inscrição hoje.</p>
+                            </div>
+
+                            <!-- Card 2: E-books -->
+                            <div class="bonus-item-card">
+                                <div class="bonus-card-icon-wrap">
+                                    <i class="ph-fill ph-book-open"></i>
+                                </div>
+                                <h3 class="bonus-card-title">3 E-books Estratégicos</h3>
+                                <ul class="bonus-card-list">
+                                    <li><i class="ph-bold ph-check-circle"></i> <span>Banco de Cláusulas</span></li>
+                                    <li><i class="ph-bold ph-check-circle"></i> <span>34 Ferramentas de PPS</span></li>
+                                    <li><i class="ph-bold ph-check-circle"></i> <span>O Futuro da Sua Empresa Familiar</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Card 3: Aulas Gravadas -->
+                            <div class="bonus-item-card">
+                                <div class="bonus-card-icon-wrap">
+                                    <i class="ph-fill ph-video-camera"></i>
+                                </div>
+                                <h3 class="bonus-card-title">3 Aulas & Acesso Especial</h3>
+                                <ul class="bonus-card-list">
+                                    <li><i class="ph-bold ph-check-circle"></i> <span><strong>6 meses Academia da Tributação</strong> (Inventário Essencial e ITCMD SP Express)</span></li>
+                                    <li><i class="ph-bold ph-check-circle"></i> <span>Aulão do ITBI Pós-Reforma</span></li>
+                                    <li><i class="ph-bold ph-check-circle"></i> <span>Aula Agentes de Governança na Prática</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Versão B -->
+                    <div class="show-ver-b">
+                        <div class="bonus-warning-pill">
+                            <i class="ph-bold ph-warning-circle"></i>
+                            <span>No dia 12, esses bônus saem do ar</span>
+                        </div>
+                        <h2 class="section-title">
+                            Fechando até 11/11, às 23h59, você ainda leva:
+                        </h2>
+
+                        <div class="bonus-items-grid" style="max-width: 650px; margin: 30px auto;">
+                            <div class="bonus-item-box">
+                                <i class="ph-fill ph-video-camera bonus-icon"></i>
+                                <div class="text-left">
+                                    <div class="bonus-item-title">3 Aulas Gravadas & Academia</div>
+                                    <div class="bonus-item-text">
+                                        • 6 meses de acesso à Academia da Tributação, com cursos como Inventário Essencial e ITCMD São Paulo Express (a partir de dezembro)<br>
+                                        • O Aulão do ITBI Pós-Reforma<br>
+                                        • A aula Agentes de Governança na Prática
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#oferta" class="btn btn-gold btn-large" aria-label="Adquirir acesso">
+                        <span>Adquirir acesso</span>
+                        <i class="ph-bold ph-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             6. Ancoragem de Valor Detalhada
+             ========================================== -->
+                <!-- ==========================================
+             6 & 7. ANCORAGEM + OFERTA UNIFICADOS (#oferta)
+             ========================================== -->
+        <section class="anchor-offer-master-section" id="oferta">
+            <div class="anchor-ambient-glow"></div>
+            <div class="container text-center">
+                <h2 class="anchor-title-main">
+                    Investimento total
+                </h2>
+                <p class="section-subtitle" style="color: var(--color-gold-light); font-size: 1.15rem; margin-top: 8px; margin-bottom: 35px;">
+                    ao comprar cada produto separadamente
+                </p>
+
+                <!-- CARD MESTRE UNIFICADO: ANCORAGEM + TRANSIÇÃO + CHECKOUT -->
+                <div class="master-offer-card">
+                    
+                    <!-- Topo: Tabela Minimalista de 2 Colunas -->
+                    <div class="anchor-minimal-board-nested">
+                        <!-- Coluna 1 (10 Itens) -->
+                        <div class="anchor-col">
+                            <div class="minimal-row">
+                                <span class="minimal-name">PPS Business</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 3.997</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Atualização mensal ao vivo (12 meses)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 3.600</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Infinity Tributos (12 meses)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 2.497</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Curso Completo de ITCD</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 247</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Legislação de ITCMD de São Paulo</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 247</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Legislação de ITD do Rio de Janeiro</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 247</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Legislação de ITCMD de Minas Gerais</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 247</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Sistemas do ITCMD em São Paulo</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 247</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Calculadora ITCD (3 meses)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 300</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Curso ao vivo Acordo de Sócios & Protocolo Familiar</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 397</span><span class="red-line"></span></span>
+                            </div>
+                        </div>
+
+                        <!-- Coluna 2 (10 Itens) -->
+                        <div class="anchor-col">
+                            <div class="minimal-row">
+                                <span class="minimal-name">Acervo de Minutas (4 minutas)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 100</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Tributação na Alienação de Imóveis (ao vivo)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 247</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Como diagnosticar a família antes do PPS (ao vivo)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 267</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Do Caos à Governança (ao vivo)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 147</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Academia da Tributação (6 meses)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 600</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Aulão do ITBI Pós-Reforma</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 97</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">Agentes de Governança na Prática (gravada)</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 197</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">E-book Banco de Cláusulas</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 57</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">E-book 34 Ferramentas de PPS</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 57</span><span class="red-line"></span></span>
+                            </div>
+                            <div class="minimal-row">
+                                <span class="minimal-name">E-book O Futuro da Sua Empresa Familiar</span>
+                                <span class="minimal-dots"></span>
+                                <span class="strike-price-tag"><span class="price-val">R$ 57</span><span class="red-line"></span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Divisor e Título de Transição no Meio dos Itens e do Checkout -->
+                    <div class="master-transition-wrap">
+                        <div class="master-divider-line"></div>
+                        <h3 class="master-claim-title">
+                            Mas hoje, você leva <span>tudo isso</span> por apenas:
+                        </h3>
+                    </div>
+
+                    <!-- Sub-Card Integrado do Checkout -->
+                    <div class="nested-checkout-box">
+                        <!-- Bloco Versão A (até 09/11) -->
+                        <div class="show-ver-a">
+                            <p class="offer-old-price">De R$ 4.997 por</p>
+                            <div class="offer-installments-wrap">
+                                <span style="font-size: 1.25rem; font-weight: 600; color: #fff;">12x de</span>
+                                <div class="offer-installments-num"><span>R$</span> 487,18</div>
+                            </div>
+                            <p class="offer-cash-price">ou R$ 4.497 à vista</p>
+
+                            <a href="https://checkout.bravvius.com/97398869" target="_blank" rel="noopener noreferrer" class="btn btn-green-checkout btn-large" style="width: 100%; max-width: 440px; font-size: 1.25rem; margin: 0 auto;">
+                                <span>Adquirir acesso</span>
+                                <i class="ph-bold ph-arrow-right"></i>
+                            </a>
+
+                            <p class="offer-validity-notice">
+                                <i class="ph-bold ph-clock"></i>
+                                <span>Condição válida até hoje, 9 de novembro, às 23h59.</span>
+                            </p>
+                        </div>
+
+                        <!-- Bloco Versão B e Versão C (10/11 em diante) -->
+                        <div class="show-ver-b show-ver-c">
+                            <div class="offer-installments-wrap">
+                                <span style="font-size: 1.25rem; font-weight: 600; color: #fff;">12x de</span>
+                                <div class="offer-installments-num"><span>R$</span> 541,35</div>
+                            </div>
+                            <p class="offer-cash-price">ou R$ 4.997 à vista</p>
+
+                            <a href="https://checkout.bravvius.com/13965280" target="_blank" rel="noopener noreferrer" class="btn btn-green-checkout btn-large" style="width: 100%; max-width: 440px; font-size: 1.25rem; margin: 0 auto;">
+                                <span>Adquirir acesso</span>
+                                <i class="ph-bold ph-arrow-right"></i>
+                            </a>
+
+                            <p class="offer-validity-notice show-ver-b">
+                                <i class="ph-bold ph-clock"></i>
+                                <span>Bônus válidos até 11 de novembro, às 23h59.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- ==========================================
+             9. Quem são seus mentores (Experts)
+             ========================================== -->
+        <section class="experts-section" id="mentores">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">
+                        Quem são seus mentores
+                    </h2>
+                </div>
+
+                <div class="experts-list">
+                    <!-- Dra. Mariana Arteiro -->
+                    <article class="expert-card">
+                        <div class="expert-photo-col">
+                            <div class="expert-avatar-wrap">
+                                <img src="Experts/Mariana.webp" alt="Dra. Mariana Arteiro" class="expert-img" width="1080" height="1350" loading="lazy" decoding="async">
+                                <div class="expert-photo-glow"></div>
+                            </div>
+                        </div>
+                        <div class="expert-info-col">
+                            <span class="expert-role">Idealizadora & Especialista</span>
+                            <h3 class="expert-name">Dra. Mariana Arteiro</h3>
+                            <div class="expert-bio">
+                                <p>Mariana Arteiro atua diretamente com Planejamento Patrimonial e Sucessório, lidando diariamente com decisões estratégicas e desafios reais do mercado.</p>
+                                <p>Sua experiência não vem apenas da teoria, mas da prática, acompanhando casos, analisando situações complexas e orientando profissionais sobre o melhor caminho a seguir.</p>
+                                <p>Atualmente, Mariana preside a Comissão Especial de Planejamento Sucessório e Holdings da OAB/SP (2025/2027) e é Conselheira da OAB/SP (2022/2027), ocupando uma posição de destaque na advocacia nacional.</p>
+                                <p>Também é a idealizadora do maior Congresso de Planejamento Patrimonial e Sucessório do país (OAB/SP, 2023, 2024, 2025 e 2026), além de já ter ocupado cargos como Presidente da OAB Cotia e Diretora do IBDFAM Cotia.</p>
+                                <p>Sua formação inclui MBA Internacional em Direito Empresarial pela Universidade da Califórnia (Irvine), pós-graduação em Planejamento Patrimonial e Sucessório (FGV Law) e especialização em Direito Tributário.</p>
+                                <p>Hoje, Mariana é reconhecida pela capacidade de transformar conhecimento em direcionamento prático para profissionais que atuam no mercado.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Jonatas Albino -->
+                    <article class="expert-card">
+                        <div class="expert-photo-col">
+                            <div class="expert-avatar-wrap">
+                                <img src="Experts/Jonatas.webp" alt="Jonatas Albino" class="expert-img" width="1080" height="1350" loading="lazy" decoding="async">
+                                <div class="expert-photo-glow"></div>
+                            </div>
+                        </div>
+                        <div class="expert-info-col">
+                            <span class="expert-role">Especialista em Tributação</span>
+                            <h3 class="expert-name">Jonatas Albino</h3>
+                            <div class="expert-bio">
+                                <p>Mestre e Especialista em Direito Tributário, além de pós-graduado em Direito Público, com ampla experiência prática em gestão e fiscalização tributária, atuando de forma destacada em inventários, sucessões e planejamento patrimonial.</p>
+                                <p>É idealizador de inovações tecnológicas para o setor jurídico, como a plataforma Infinity Tributos (cálculos tributários voltados ao planejamento patrimonial e sucessório) e o sistema Calcula ITCD (pioneiro na automação de cálculos de ITCMD em inventários e divórcios, inclusive em atraso). Como autor e pesquisador, escreveu a obra <em>Transmissão de Imóveis por meio de Holdings: Planejamento Tributário ou Ofensa à Função Social da Empresa?</em> e foi coautor do livro <em>Estudos Fiscais sobre ITCMD</em>, dentre outras.</p>
+                                <p>Criador da Comunidade Conexão Tributação e Sucessões, onde mais de 1.000 advogados foram especializados, é palestrante nacional e internacional e educador reconhecido por sua didática clara e objetiva, unindo rigor teórico e vivência prática para entregar conteúdos de aplicação imediata ao dia a dia profissional.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- João Teixeira -->
+                    <article class="expert-card">
+                        <div class="expert-photo-col">
+                            <div class="expert-avatar-wrap">
+                                <img src="Experts/Joao.webp" alt="João Teixeira" class="expert-img" width="1080" height="1350" loading="lazy" decoding="async">
+                                <div class="expert-photo-glow"></div>
+                            </div>
+                        </div>
+                        <div class="expert-info-col">
+                            <span class="expert-role">Especialista em Governança Familiar</span>
+                            <h3 class="expert-name">João Teixeira</h3>
+                            <div class="expert-bio">
+                                <p>Fundador e CEO na Hold Gestão Patrimonial, desde 2008, assessorando famílias empresárias e seus proprietários, atuando em planejamento patrimonial e sucessório, com quase 20 anos de experiência, com atuação em mais de 22 estados brasileiros e atendimento a mais de 480 famílias empresárias.</p>
+                                <p>Estrategista em Governança Familiar com expertise na implementação de Conselhos (Consultivo, de Sócios e de Família) e instrumentos complexos como estratégias societárias, elaboração de acordo de quotistas, protocolo familiar, regimentos internos e códigos de conduta; atuando em questões essenciais à coesão da família em torno dos seus objetivos de negócios, levando em conta os diferentes estágios de maturidade das empresas e a complexidade dos relacionamentos familiares.</p>
+                                <p>Esse trabalho de aconselhamento ajuda a identificar riscos e a definir regras para evitar conflitos entre membros da família e sócios, cujo objetivo é assegurar a preservação do legado do fundador e a perpetuação do negócio familiar. Especialista em mediação de conflitos societários e com visão de longevidade empresarial.</p>
+                                <p><strong>Autor do livro:</strong> <em>Holding Familiar & Proteção Patrimonial: Planejamento Sucessório Seguro e Inteligente</em> (AugeBooks, 2025).</p>
+                                <p><strong>Coautor:</strong> <em>Guia de Governança Corporativa para Empresas de Capital Fechado, Capítulo 6</em> (ABC³).</p>
+                                <p><strong>Coautor do e-book:</strong> <em>Celint Conselho Consultivo: Implementação, Capítulo 4</em> (2024).</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-cta text-center mt-5">
+                    <a href="#oferta" class="btn btn-gold btn-large" aria-label="Quero aproveitar a Black">
+                        <span>Quero aproveitar a Black</span>
+                        <i class="ph-bold ph-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             10. O que dizem nossos alunos (Depoimentos)
+             ========================================== -->
+        <section class="testimonials-section" id="depoimentos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">
+                        O que dizem nossos alunos
+                    </h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Depoimento Print 1 -->
+                    <div class="testimonial-card print-card">
+                        <img src="depoimentos/dp_01.webp" alt="Depoimento de aluno no WhatsApp" class="testimonial-print" width="1118" height="954" loading="lazy" decoding="async">
+                    </div>
+
+                    <!-- Depoimento Print 2 -->
+                    <div class="testimonial-card print-card">
+                        <img src="depoimentos/dp_02.webp" alt="Depoimento de aluno no WhatsApp" class="testimonial-print" width="398" height="294" loading="lazy" decoding="async">
+                    </div>
+                </div>
+
+                <div class="section-cta text-center mt-5">
+                    <a href="#oferta" class="btn btn-gold btn-large" aria-label="Quero aproveitar a Black">
+                        <span>Quero aproveitar a Black</span>
+                        <i class="ph-bold ph-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             11. Aviso de Golpes
+             ========================================== -->
+        <section class="fraud-alert-section" id="seguranca">
+            <div class="container">
+                <div class="fraud-alert-box">
+                    <div class="fraud-icon-wrap">
+                        <i class="ph-fill ph-shield-warning"></i>
+                    </div>
+                    <div class="fraud-content">
+                        <h3 class="fraud-title">Fique atento aos golpes!</h3>
+                        <p class="fraud-text">
+                            Nunca adquira nenhum produto fora do nosso grupo ou número oficial.
+                        </p>
+                        <div class="official-phone-badge">
+                            <span class="official-label">Nosso número oficial:</span>
+                            <a href="https://wa.me/5511992653600" target="_blank" rel="noopener noreferrer" class="official-number-link">
+                                <i class="ph-fill ph-whatsapp-logo"></i>
+                                <span>(11) 99265-3600</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         Rodapé Oficial
+         ========================================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logos/Logo-Sem Fundo.webp" alt="Black Friday PPS e Holding" width="1080" height="464" loading="lazy" decoding="async">
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 Dra. Mariana Arteiro • Todos os direitos reservados.
+            </p>
+            <p class="footer-disclaimer">
+                Planejamento Patrimonial, Sucessório, Governança e Tributação.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="script.js?t=1794098682" defer></script>
+</body>
+
+</html>
