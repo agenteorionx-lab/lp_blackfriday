@@ -4517,3 +4517,70 @@ body.version-c .hide-ver-c { display: none !important; }
         font-size: 0.9rem;
     }
 }
+
+
+/* ====================================================
+   ENCONTROS AO VIVO - ÍCONES SVG COMO PROTAGONISTAS & SELOS VERDES
+   ==================================================== */
+
+/* Barra do Topo do Card: Ícone em destaque à esquerda e Selo Verde à direita */
+.live-card-top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 22px !important;
+}
+
+/* Ícone SVG Grande e Marcante (Protagonista Visual) */
+.live-icon-pill {
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 16px !important;
+    background: radial-gradient(circle, rgba(223, 160, 98, 0.22) 0%, rgba(223, 160, 98, 0.08) 100%) !important;
+    border: 1.5px solid rgba(223, 160, 98, 0.5) !important;
+    color: var(--color-gold-light) !important;
+    font-size: 1.9rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 15px rgba(223, 160, 98, 0.2) !important;
+    transition: var(--transition-smooth) !important;
+}
+
+.live-card:hover .live-icon-pill {
+    transform: scale(1.08) rotate(3deg) !important;
+    border-color: var(--color-gold) !important;
+    background: radial-gradient(circle, rgba(223, 160, 98, 0.35) 0%, rgba(223, 160, 98, 0.15) 100%) !important;
+    box-shadow: 0 6px 22px rgba(223, 160, 98, 0.4) !important;
+}
+
+/* Ícone especial do WhatsApp */
+.live-icon-pill.pill-whatsapp {
+    background: radial-gradient(circle, rgba(37, 211, 102, 0.25) 0%, rgba(37, 211, 102, 0.08) 100%) !important;
+    border-color: rgba(37, 211, 102, 0.55) !important;
+    color: #25D366 !important;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25) !important;
+}
+
+/* TODOS OS SELOS EM VERDE VIBRANTE (ALTA CONVERSÃO & DESTAQUE) */
+.live-card-badge,
+.live-card-badge.badge-vip {
+    background: linear-gradient(135deg, #25D366 0%, #1db954 50%, #128C7E 100%) !important;
+    color: #FFFFFF !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.8rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    padding: 7px 16px !important;
+    border-radius: 999px !important;
+    box-shadow: 0 3px 14px rgba(37, 211, 102, 0.45), 0 0 10px rgba(37, 211, 102, 0.2) !important;
+    border: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+}
+
+.live-card-badge i {
+    font-size: 0.95rem !important;
+}
