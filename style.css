@@ -4846,3 +4846,79 @@ body.version-c .hide-ver-c {
     margin-bottom: 0 !important;
     font-size: 1.35rem !important;
 }
+
+
+/* ====================================================
+   AJUSTE RESPONSIVO MOBILE DEFINITIVO - BLOCO DE BÔNUS
+   Em telas mobile/tablet (< 900px), os cards empilham 1 por 1
+   sem espremer os textos nem cortar títulos
+   ==================================================== */
+@media (max-width: 900px) {
+    .period-bonus-card {
+        padding: 34px 18px !important;
+        border-radius: 20px !important;
+    }
+
+    .period-bonus-card .section-title {
+        font-size: 1.55rem !important;
+        line-height: 1.3 !important;
+        padding: 0 4px !important;
+    }
+
+    .bonus-warning-pill {
+        padding: 6px 14px !important;
+        font-size: 0.8rem !important;
+        line-height: 1.3 !important;
+        white-space: normal !important;
+        text-align: center !important;
+    }
+
+    /* Grid vira 1 coluna única, empilhada e espaçosa */
+    .bonus-items-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+        margin: 26px 0 !important;
+    }
+
+    .period-bonus-card .bonus-item-card {
+        width: 100% !important;
+        padding: 24px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .period-bonus-card .bonus-card-title {
+        font-size: 1.18rem !important;
+    }
+
+    .period-bonus-card .bonus-card-subtitle {
+        font-size: 0.9rem !important;
+    }
+
+    .period-bonus-card .bonus-card-list li {
+        font-size: 0.88rem !important;
+        line-height: 1.4 !important;
+    }
+
+    .bonus-single-centered-wrap {
+        width: 100% !important;
+        margin: 20px auto !important;
+    }
+
+    .bonus-card-large {
+        padding: 24px 18px !important;
+    }
+
+    .bonus-card-header-styled {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        margin-bottom: 18px !important;
+        padding-bottom: 14px !important;
+    }
+
+    .bonus-card-icon-styled {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 1.5rem !important;
+    }
+}
