@@ -4924,151 +4924,52 @@ body.version-c .hide-ver-c {
 }
 
 
-/* ====================================================
-   TRAVA TOTAL DE SCROLL LATERAL / HORIZONTAL (MOBILE LOCK)
-   Evita que a página balance ou deslize para os lados no celular
-   ==================================================== */
-html, body {
-    max-width: 100% !important;
-    overflow-x: clip !important;
-    position: relative !important;
-    touch-action: pan-y !important; /* Permite scroll vertical livre, bloqueia horizontal */
-}
-
-/* Garante que nenhum container ou elemento exceda 100% da viewport */
-*, *::before, *::after {
-    box-sizing: border-box !important;
-}
-
-/* Travas específicas em elementos que costumam vazar no mobile */
-.container {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    overflow: visible !important;
-}
-
-.hero-section,
-.products-section,
-.platform-section,
-.live-updates-section,
-.period-bonus-section,
-.anchor-section,
-.offer-section,
-.guarantee-section,
-.experts-section,
-.testimonials-section,
-.fraud-alert-section,
-.footer {
-    width: 100% !important;
-    max-width: 100vw !important;
-    overflow-x: clip !important;
-}
-
-/* Efeitos de luz que ultrapassavam a tela agora são contidos */
-.hero-ambient-glow,
-.anchor-ambient-glow {
-    max-width: 100vw !important;
-    overflow: hidden !important;
-}
-
-/* Imagens contidas sem estourar */
-img {
-    max-width: 100% !important;
-    height: auto !important;
-}
-
-/* Tabela de ancoragem contida no mobile */
-@media (max-width: 860px) {
-    .anchor-minimal-board {
-        padding: 24px 14px !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-    
-    .minimal-name {
-        white-space: normal !important;
-        font-size: 0.85rem !important;
-        max-width: 65% !important;
-    }
-    
-    .minimal-dots {
-        margin: 0 6px !important;
-    }
-    
-    .minimal-price {
-        font-size: 0.95rem !important;
-    }
-
-    .top-fixed-bar {
-        padding: 6px 10px !important;
-    }
-    
-    .top-bar-content {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 8px !important;
-    }
-    
-    .countdown-timer {
-        gap: 4px !important;
-    }
-    
-    .time-box {
-        min-width: 40px !important;
-        padding: 4px 6px !important;
-    }
-}
 
 
 /* ====================================================
-   CONTROLE TOTAL E INDEPENDENTE DE VERSÕES (A, B, C)
+   TRAVA DE SCROLL HORIZONTAL EXCLUSIVA PARA CELULAR (< 768px)
+   Não interfere em nada no Desktop!
    ==================================================== */
-/* Na Versão A: mostra APENAS .show-ver-a (oculta .show-ver-b, .show-ver-c e .show-ver-bc) */
-body.version-a .show-ver-b,
-body.version-a .show-ver-c,
-body.version-a .show-ver-bc {
-    display: none !important;
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+        position: relative !important;
+        touch-action: pan-y !important;
+    }
+    
+    .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    
+    .hero-section,
+    .products-section,
+    .platform-section,
+    .live-updates-section,
+    .period-bonus-section,
+    .anchor-section,
+    .offer-section,
+    .guarantee-section,
+    .experts-section,
+    .testimonials-section,
+    .fraud-alert-section,
+    .footer {
+        overflow-x: hidden !important;
+    }
 }
 
-/* Na Versão B: mostra APENAS .show-ver-b e .show-ver-bc (oculta .show-ver-a e .show-ver-c) */
-body.version-b .show-ver-a,
-body.version-b .show-ver-c {
-    display: none !important;
-}
-
-/* Na Versão C: mostra APENAS .show-ver-bc e .show-ver-c (oculta .show-ver-a, .show-ver-b e .hide-ver-c) */
-body.version-c .show-ver-a,
-body.version-c .show-ver-b,
-body.version-c .hide-ver-c {
-    display: none !important;
-}
-
-
-/* ====================================================
-   CORREÇÃO DEFINITIVA DO SELO DO CHECKOUT (SEM CORTES)
-   ==================================================== */
+/* Correção de folga do selo do checkout no Desktop e Mobile */
 .offer-section {
-    padding-top: 130px !important; /* Espaço amplo para o selo respirar */
-    overflow: visible !important;
+    padding-top: 110px !important;
 }
-
-.offer-section .container {
-    overflow: visible !important;
-}
-
 .offer-card {
     position: relative !important;
     overflow: visible !important;
-    margin-top: 20px !important;
 }
-
 .offer-badge {
     position: absolute !important;
-    top: -20px !important;
+    top: -18px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    z-index: 10 !important;
-    white-space: nowrap !important;
+    z-index: 5 !important;
 }
