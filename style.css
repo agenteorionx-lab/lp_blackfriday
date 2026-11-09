@@ -4647,3 +4647,95 @@ body.version-c .hide-ver-c { display: none !important; }
     margin: 0 !important;
     letter-spacing: normal !important;
 }
+
+
+/* ====================================================
+   CARDS DE PRODUTOS UNIFICADOS (BANNER + DESCRIÇÃO INTEGRADA)
+   A imagem e a legenda formam um único card contínuo e elegante
+   ==================================================== */
+.products-static-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 36px 30px !important;
+    max-width: 1200px !important;
+    margin: 48px auto 0 auto !important;
+}
+
+.product-grid-item {
+    display: flex !important;
+    justify-content: center !important;
+    height: 100% !important;
+}
+
+/* O card vira a moldura única envolvendo a arte e o texto */
+.product-grid-item .product-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    background: #0d0d12 !important;
+    border: 1.5px solid rgba(223, 160, 98, 0.35) !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65), 0 0 15px rgba(223, 160, 98, 0.05) !important;
+    transition: var(--transition-smooth) !important;
+}
+
+.product-grid-item .product-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: rgba(223, 160, 98, 0.75) !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.85), 0 0 25px rgba(223, 160, 98, 0.2) !important;
+}
+
+/* Envoltório da Imagem - Sem bordas internas, sangrando no topo */
+.product-img-wrap {
+    width: 100% !important;
+    border-radius: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+}
+
+.product-img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    border-radius: 0 !important;
+}
+
+/* Rodapé Interno do Card: Onde a legenda se integra como parte do produto */
+.product-card-body {
+    padding: 16px 20px 20px 20px !important;
+    text-align: center !important;
+    background: linear-gradient(180deg, rgba(20, 20, 26, 0.98) 0%, rgba(12, 12, 16, 1) 100%) !important;
+    border-top: 1px solid rgba(223, 160, 98, 0.2) !important;
+    flex-grow: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.product-card-desc {
+    font-family: var(--font-body) !important;
+    font-size: 0.94rem !important;
+    font-weight: 600 !important;
+    color: #E6E6F0 !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+    letter-spacing: -0.01em !important;
+}
+
+@media (max-width: 992px) {
+    .products-static-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 26px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-static-grid {
+        grid-template-columns: 1fr !important;
+        gap: 22px !important;
+    }
+}
