@@ -4820,19 +4820,20 @@ body.version-c .hide-ver-c { display: none !important; }
 /* ====================================================
    CORREÇÃO DEFINITIVA DAS REGRAS DE VERSÃO (A, B, C)
    ==================================================== */
-/* Versão A: esconde B e C, mostra A e BC */
-body.version-a .show-ver-b:not(.show-ver-bc),
-body.version-a .show-ver-c:not(.show-ver-bc) {
+/* Versão A: esconde B, C e BC; mostra APENAS A */
+body.version-a .show-ver-b,
+body.version-a .show-ver-c,
+body.version-a .show-ver-bc {
     display: none !important;
 }
 
-/* Versão B: esconde A e C pura, mostra B e BC */
+/* Versão B: esconde A e C pura; mostra B e BC */
 body.version-b .show-ver-a,
 body.version-b .show-ver-c:not(.show-ver-bc) {
     display: none !important;
 }
 
-/* Versão C: esconde A e B pura e esconde elementos temporários */
+/* Versão C: esconde A e B pura; esconde elementos temporários; mostra BC */
 body.version-c .show-ver-a,
 body.version-c .show-ver-b:not(.show-ver-bc) {
     display: none !important;
