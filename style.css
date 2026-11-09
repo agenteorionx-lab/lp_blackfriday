@@ -4946,7 +4946,7 @@ html, body {
     max-width: 100% !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
-    overflow: hidden !important;
+    overflow: visible !important;
 }
 
 .hero-section,
@@ -5043,4 +5043,32 @@ body.version-c .show-ver-a,
 body.version-c .show-ver-b,
 body.version-c .hide-ver-c {
     display: none !important;
+}
+
+
+/* ====================================================
+   CORREÇÃO DEFINITIVA DO SELO DO CHECKOUT (SEM CORTES)
+   ==================================================== */
+.offer-section {
+    padding-top: 130px !important; /* Espaço amplo para o selo respirar */
+    overflow: visible !important;
+}
+
+.offer-section .container {
+    overflow: visible !important;
+}
+
+.offer-card {
+    position: relative !important;
+    overflow: visible !important;
+    margin-top: 20px !important;
+}
+
+.offer-badge {
+    position: absolute !important;
+    top: -20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 10 !important;
+    white-space: nowrap !important;
 }
