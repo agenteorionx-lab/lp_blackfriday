@@ -4739,3 +4739,44 @@ body.version-c .hide-ver-c { display: none !important; }
         gap: 22px !important;
     }
 }
+
+
+/* ====================================================
+   VERSÃO B - CARD ÚNICO CENTRALIZADO E HARMONIOSO
+   ==================================================== */
+.bonus-single-centered-wrap {
+    max-width: 680px;
+    margin: 36px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bonus-card-large {
+    width: 100% !important;
+    max-width: 640px !important;
+    background: radial-gradient(ellipse at 50% 0%, rgba(223, 160, 98, 0.14) 0%, rgba(14, 14, 18, 0.95) 85%) !important;
+    border: 1.5px solid rgba(223, 160, 98, 0.55) !important;
+    padding: 38px 36px !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(223, 160, 98, 0.15) !important;
+}
+
+.bonus-card-large .bonus-card-title {
+    font-size: 1.4rem !important;
+    margin-bottom: 22px !important;
+}
+
+.bonus-card-large .bonus-card-list li {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    gap: 14px !important;
+}
+
+.bonus-card-large .bonus-card-list li i {
+    font-size: 1.35rem !important;
+}
+
+@media (max-width: 640px) {
+    .bonus-card-large {
+        padding: 26px 20px !important;
+    }
+}
