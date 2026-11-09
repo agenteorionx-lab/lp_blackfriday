@@ -4805,3 +4805,44 @@ body.version-c .show-ver-b:not(.show-ver-bc) {
 body.version-c .hide-ver-c {
     display: none !important;
 }
+
+
+/* ====================================================
+   ENQUADRAMENTO DO BOTÃO E ÍCONE REFINADO NA VERSÃO B
+   ==================================================== */
+.bonus-cta-wrap {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bonus-card-header-styled {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(223, 160, 98, 0.25);
+    text-align: left;
+}
+
+.bonus-card-icon-styled {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: radial-gradient(circle, rgba(223, 160, 98, 0.25) 0%, rgba(223, 160, 98, 0.08) 100%);
+    border: 1.5px solid rgba(223, 160, 98, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--color-gold-light);
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(223, 160, 98, 0.2);
+}
+
+.bonus-card-header-styled .bonus-card-title {
+    margin-bottom: 0 !important;
+    font-size: 1.35rem !important;
+}
