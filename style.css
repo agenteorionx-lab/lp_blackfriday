@@ -1739,6 +1739,17 @@ button {
     gap: 20px;
 }
 
+.testimonials-prints-grid {
+    max-width: 860px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.testimonials-prints-grid .print-card {
+    background: #ffffff;
+    padding: 12px;
+}
+
 .testimonial-card {
     background: var(--color-dark-card);
     border: var(--border-gold-subtle);
@@ -2534,6 +2545,11 @@ button {
     .testimonials-shorts-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 14px !important;
+    }
+
+    .testimonials-prints-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
     }
 
     .fraud-alert-box {
