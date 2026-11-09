@@ -4626,8 +4626,7 @@ body.version-c .hide-ver-c { display: none !important; }
     width: 100% !important;
     height: auto !important;
     display: block !important;
-    image-rendering: -webkit-optimize-contrast !important;
-    image-rendering: crisp-edges !important;
+    image-rendering: auto !important;
     filter: none !important;
     transform: none !important;
     border-radius: 0 !important;
@@ -4702,6 +4701,8 @@ body.version-c .hide-ver-c { display: none !important; }
     height: auto !important;
     display: block !important;
     border-radius: 0 !important;
+    image-rendering: auto !important;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 /* Rodapé Interno do Card: Onde a legenda se integra como parte do produto */
