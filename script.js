@@ -146,8 +146,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (hasAnimatedAnchor || !anchorCounter) return;
         hasAnimatedAnchor = true;
 
-        // Versão A: R$ 13.852,00 (com 3 e-books) | Versão B e C: R$ 13.681,00 (sem os 3 e-books)
-        const targetValue = (currentVersion === 'A') ? 13852.00 : 13681.00;
+        // Versão A: R$ 13.852,00 | Versão B: R$ 13.681,00 | Versão C: R$ 12.787,00 (sem e-books e sem as 3 aulas/academia)
+        let targetValue = 13681.00;
+        if (currentVersion === 'A') {
+            targetValue = 13852.00;
+        } else if (currentVersion === 'C') {
+            targetValue = 12787.00;
+        }
+
         const duration = 1800; // 1.8s
         const startTime = performance.now();
 
