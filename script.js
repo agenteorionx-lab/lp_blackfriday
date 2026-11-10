@@ -7,15 +7,30 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ====================================================
-       0. CONTROLE DE VERSÃO (A, B ou C)
-       Permite chavear via parâmetro na URL: ?v=A, ?v=B, ?v=C
-       Ou ajustar a constante DEFAULT_VERSION abaixo ('A', 'B' ou 'C').
+       0. CONTROLE DE VERSÃO AUTOMÁTICO POR DATA (A, B ou C)
+       Permite forçar via parâmetro na URL: ?v=A, ?v=B, ?v=C
+       Caso sem parâmetro, calcula automaticamente pela data:
+       - Até 09/11/2026 23:59:59 -> Versão A
+       - 10/11 e 11/11/2026 até 23:59:59 -> Versão B
+       - A partir de 12/11/2026 00:00:00 -> Versão C
        ==================================================== */
-    const DEFAULT_VERSION = 'A'; // Altere para 'B' ou 'C' quando desejar mudar a versão padrão
+    function getAutoVersion() {
+        const now = new Date();
+        const cutoffA = new Date(2026, 10, 9, 23, 59, 59); // 09/11 23:59:59
+        const cutoffB = new Date(2026, 10, 11, 23, 59, 59); // 11/11 23:59:59
+
+        if (now <= cutoffA) {
+            return 'A';
+        } else if (now <= cutoffB) {
+            return 'B';
+        } else {
+            return 'C';
+        }
+    }
 
     const urlParams = new URLSearchParams(window.location.search);
     const paramVersion = urlParams.get('v') || urlParams.get('versao');
-    const currentVersion = (paramVersion ? paramVersion.toUpperCase() : DEFAULT_VERSION);
+    const currentVersion = (paramVersion ? paramVersion.toUpperCase() : getAutoVersion());
 
     document.body.classList.remove('version-a', 'version-b', 'version-c');
     if (currentVersion === 'B') {
