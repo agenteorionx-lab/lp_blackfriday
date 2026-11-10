@@ -1,4 +1,4 @@
-﻿/**
+/**
  * LANDING PAGE BLACK FRIDAY - PPS E HOLDING
  * Dra. Mariana Arteiro, Jonatas Albino & João Teixeira
  * Lógica de Versões (A, B, C), Cronômetro, Swiper e Contador de Ancoragem
@@ -146,7 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (hasAnimatedAnchor || !anchorCounter) return;
         hasAnimatedAnchor = true;
 
-        const targetValue = 13852.00; // Soma exata de todos os itens da ancoragem
+        // Versão A: R$ 13.852,00 (com 3 e-books) | Versão B e C: R$ 13.681,00 (sem os 3 e-books)
+        const targetValue = (currentVersion === 'A') ? 13852.00 : 13681.00;
         const duration = 1800; // 1.8s
         const startTime = performance.now();
 
