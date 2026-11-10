@@ -299,19 +299,23 @@ document.addEventListener('DOMContentLoaded', () => {
        ANIMAÇÃO EM CASCATA DOS PREÇOS RISCADOS AO ROLAR A TELA
        Conforme o usuário chega perto, os riscos cortam de cima para baixo
        ==================================================== */
-    const masterCard = document.querySelector('.anchor-minimal-board') || document.querySelector('.anchor-section');
-    const strikeTags = document.querySelectorAll('.strike-price-tag');
+    const masterCard = document.querySelector('.anchor-minimal-container') || document.querySelector('.anchor-section');
     let hasTriggeredStrikes = false;
 
     function triggerCascadeStrikes() {
-        if (hasTriggeredStrikes || strikeTags.length === 0) return;
+        if (hasTriggeredStrikes) return;
         hasTriggeredStrikes = true;
 
-        strikeTags.forEach((tag, index) => {
-            // Intervalo de 85ms entre cada linha para um efeito cascata perfeito e dinâmico
+        // Pega apenas as tags que estão realmente visíveis no momento na versão ativa
+        const visibleStrikeTags = Array.from(document.querySelectorAll('.strike-price-tag')).filter(tag => {
+            return tag.offsetParent !== null;
+        });
+
+        visibleStrikeTags.forEach((tag, index) => {
+            // Intervalo de 80ms entre cada linha para um efeito cascata dinâmico
             setTimeout(() => {
                 tag.classList.add('struck');
-            }, index * 85);
+            }, index * 80);
         });
     }
 
